@@ -39,20 +39,47 @@ Before getting started, ensure you have the following prerequisites:
    pip install -r requirements.txt
    ```
 
-### Inferencing Instructions
+### Usage
 
-To perform inference with the fine-tuned model, follow these steps:
+#### Option 1: Bare Metal
+
+To perform inference on your local machine without using Docker, follow these steps:
 
 1. Download the fine-tuned model weights from the [Google Drive](https://drive.google.com/file/d/10Rqx_j4Q0AyZUeUDXLVqLph0Tsuo110g).
 
 2. Place the downloaded files in the 'xlm-roberta-large-custom-trained' folder.
 
-Once you have completed these steps, run the inference server.
+3. Once you have completed these steps, run the inference server:
 
- ```shell
+   ```shell
    python -m server --model xlm-roberta-large-custom-trained
    ```
-3. test the inference server
+4. Test the inference server
+   
+   ```shell
+   curl http://localhost:8080/ready
+   curl -X POST -H "Content-Type: application/json" -d '{"text": "when is the next flight to new york"}' http://localhost:8080/intent
+   ```
+#### Option 2: Via Docker
+
+To perform inference using Docker, follow these steps:
+
+1. Download the fine-tuned model weights from the [Google Drive](https://drive.google.com/file/d/10Rqx_j4Q0AyZUeUDXLVqLph0Tsuo110g).
+
+2. Place the downloaded files in the 'xlm-roberta-large-custom-trained' folder.
+
+3. Build the Docker image:
+
+   ```shell
+   docker build -t my-roberta-app -f Dockerfile .
+   ```
+   
+4. Run the Docker container, mapping port 8080 (or your preferred port) and specifying the model:
+
+   ```shell
+   docker-compose -f docker-compose.yml up
+   ```
+5. test the inference server
    
    ```shell
    curl http://localhost:8080/ready
