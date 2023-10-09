@@ -39,17 +39,29 @@ Before getting started, ensure you have the following prerequisites:
    pip install -r requirements.txt
    ```
 
-### Usage
+### Inferencing Instructions
 
-1. Prepare your dataset: You'll need a dataset with labeled examples for intent detection. Use the provided preprocessing scripts to prepare your data.
+To perform inference with the fine-tuned model, follow these steps:
 
-2. Fine-tune the model: Train the XLM-Roberta model on your dataset using the fine-tuning scripts. You can customize the training parameters to suit your specific task.
+1. Download the fine-tuned model configuration, weights, and label encoder indices from the [Google Drive Folder](https://drive.google.com/drive/folders/10PRchS1G8thw5kDZKBxjOwIZdLGlYAif).
 
-3. Inference: Use the trained model for making predictions on new input text to determine the intent.
+2. Place the downloaded files in the 'xlm-roberta-large-custom-trained' folder.
 
-### Example Notebooks
+Once you have completed these steps, run the inference server.
 
-Check out the example notebooks in the `notebooks/` directory for detailed usage examples and demonstrations.
+ ```shell
+   python -m server --model xlm-roberta-large-custom-trained
+   ```
+3. test the inference server
+   
+   ```shell
+   curl http://localhost:8080/ready
+   curl -X POST -H "Content-Type: application/json" -d '{"text": "when is the next flight to new york"}' http://localhost:8080/intent
+   ```
+
+### Training Instructions
+
+Check out the example notebook `Train.ipnb` in the `notebooks/` directory for detailed training and offline model evaluation.
 
 ## Acknowledgments
 
