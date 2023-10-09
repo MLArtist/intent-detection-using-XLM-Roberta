@@ -1,0 +1,12 @@
+version: '1'
+services:
+  my-roberta-app:
+    image: my-roberta-app
+    restart: always
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    volumes:
+      - .:/app
+    command: ["python3", "server.py", "--model", "xlm-roberta-large-custom-trained"]
