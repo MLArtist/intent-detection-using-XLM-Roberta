@@ -43,7 +43,7 @@ Before getting started, ensure you have the following prerequisites:
 
 To perform inference with the fine-tuned model, follow these steps:
 
-1. Download the fine-tuned model configuration, weights, and label encoder indices from the [Google Drive Folder](https://drive.google.com/drive/folders/10PRchS1G8thw5kDZKBxjOwIZdLGlYAif).
+1. Download the fine-tuned model weights from the [Google Drive](https://drive.google.com/file/d/10Rqx_j4Q0AyZUeUDXLVqLph0Tsuo110g).
 
 2. Place the downloaded files in the 'xlm-roberta-large-custom-trained' folder.
 
