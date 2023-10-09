@@ -1,0 +1,30 @@
+Can you tell me about the meal options on American Airlines flight 123?	meal
+Do I need to pre-order a meal for my upcoming United Airlines flight from New York to Miami?	meal
+What's the meal policy on Southwest Airlines flights from Denver to Las Vegas?	meal
+Tell me if there are any vegetarian meal choices on Delta flight 456 from Seattle to Orlando.	meal
+Are there gluten-free meal options on Alaska Airlines flights to San Diego from San Francisco?	meal
+I'm flying from Houston to Phoenix on US Airways. Can I see the menu for in-flight meals?	meal
+Is there a special meal service for passengers with dietary restrictions on JetBlue flights?	meal
+What's the cost of purchasing a meal on my Spirit Airlines flight from Las Vegas to Chicago?	meal
+Can you provide information about the breakfast options on early morning flights to New York?	meal
+I have a long-haul flight from Los Angeles to Tokyo. What are the meal choices for business class?	meal
+Can you tell me the baggage policy for international flights from New York to London?	restriction
+What are the baggage weight limits for flights from Los Angeles to Tokyo on economy tickets?	restriction
+I need to know the restrictions on booking a flight for two adults and one child from Miami to Cancun.	restriction
+Are there any restrictions on the refund policy for flights to Las Vegas from Denver?	restriction
+What is the cancellation policy for flight AF123 from Paris to New York?	restriction
+What's the restriction for booking a flight with a pet from Seattle to Miami?	restriction
+Can you explain the restrictions on the discount code DC456 for flights to Orlando?	restriction
+What's the policy for booking a flight from San Francisco to New York with a lap infant?	restriction
+What is the fare restriction code for a first-class ticket from New York to Los Angeles?	restriction
+I'd like to know the restrictions for changing a flight booking from Dallas to Chicago.	restriction
+What's the least expensive option available?	cheapest
+I'm looking for the most affordable fare.	cheapest
+"Find me the lowest-priced ticket, please."	cheapest
+Can you show me the cheapest flight deal?	cheapest
+I want the cheapest possible booking.	cheapest
+Please display the least costly fare.	cheapest
+Looking for the best bargain on a flight.	cheapest
+What's the cheapest rate for this route?	cheapest
+Show me the flights with the lowest prices.	cheapest
+I need information on the cheapest option.	cheapest
