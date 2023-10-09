@@ -61,7 +61,7 @@ Once you have completed these steps, run the inference server.
 
 ### Training Instructions
 
-Check out the example notebook `Train.ipnb` in the `notebooks/` directory for detailed training and offline model evaluation.
+Use the example notebook `Train.ipynb` in the `notebooks/` directory for detailed training and offline model evaluation.
 
 ## Acknowledgments
 
